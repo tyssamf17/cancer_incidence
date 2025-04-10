@@ -17,5 +17,4 @@ six==1.17.0
 statsmodels==0.14.4
 tzdata==2025.2
 
-git config --global user.name "tyssamf17"
-git config --global user.email "tyssamfernandez@gmail.com"
+

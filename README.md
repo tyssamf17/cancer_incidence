@@ -16,7 +16,7 @@ Este proyecto analiza la incidencia del cáncer cerebral a nivel global utilizan
 ## Estructura del proyecto
 
 PROYECTO ABRIL MASTER DATA SCIENCE/
-├── 📂 data/                 # Archivos CSV originales y de apoyo
+├── 📂 data/                 # Archivos CSV originales 
 │   ├── data.csv
 │   ├── cancer_dict.csv
 │   └── id_dict.csv
@@ -38,18 +38,6 @@ PROYECTO ABRIL MASTER DATA SCIENCE/
 
 ---
 
-## Cómo ejecutar el pipeline de datos
-
-1. Asegúrate de tener Python instalado.
-2. Clona este repositorio o descarga los archivos.
-3. Instala las dependencias:
-
-bash:
-pip install -r requirements.txt
-python scripts/pipeline_cancer_estructurado.py
-
----
-
 ## Visualización en Power BI
 
 El archivo `dashboard.pbix` contiene las visualizaciones interactivas que permiten explorar los principales hallazgos del análisis:
@@ -64,8 +52,21 @@ Todas las visualizaciones están acompañadas de *insights* y conclusiones clave
 
 ---
 
+## Visualización en Streamlit
+Se desarrolló una aplicación web con Streamlit para ofrecer una exploración más flexible e interactiva del dataset limpio. Incluye:
+
+- **Histograma por grupos de edad**
+- **Mapas de calor de correlaciones**
+- **Comparaciones por sexo y subtipo tumoral**
+- **Gráficos por evolución de la incidencia según edad y sexo**
+- **Gráfico multivariable que relaciona incidencia, edad, sexo y subtipo**
+- **Mapa por continentes y panel comparativo filtrable**
+
+
+---
+
 ## Herramientas utilizadas
-- **Python: pandas, seaborn, matplotlib, scipy, statsmodels**
+- **Python: pandas, seaborn, matplotlib, scipy, statsmodels, streamlit**
 - **Power BI Desktop: visualizaciones y dashboard final**
 - **Jupyter Notebook: análisis exploratorio**
 - **Visual Studio Code: desarrollo del pipeline**
